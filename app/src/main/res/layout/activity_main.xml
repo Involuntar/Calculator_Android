@@ -115,4 +115,12 @@
             app:layout_row="0" />
 
     </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Неволин Илья Т-423901-НТ ИСиТ"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="696dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
