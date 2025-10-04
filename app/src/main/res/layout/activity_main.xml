@@ -109,7 +109,7 @@
 
         <Button
             android:id="@+id/Multiple"
-            android:layout_width="311dp"
+            android:layout_width="306dp"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
             android:backgroundTint="#C5C5C5"
