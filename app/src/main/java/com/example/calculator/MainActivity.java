@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Operation.setText("+");
 
-                double operand1 = Double.parseDouble(Operand1.getText().toString());
-                double operand2 = Double.parseDouble(Operand2.getText().toString());
+                double operand1 = !Operand1.getText().toString().isEmpty() ? Double.parseDouble(Operand1.getText().toString()) : 0;
+                double operand2 = !Operand2.getText().toString().isEmpty() ? Double.parseDouble(Operand2.getText().toString()) : 0;
 
                 double result = operand1 + operand2;
                 String strResult = Double.toString(result);
@@ -67,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Operation.setText("-");
 
-                double operand1 = Double.parseDouble(Operand1.getText().toString());
-                double operand2 = Double.parseDouble(Operand2.getText().toString());
+                double operand1 = !Operand1.getText().toString().isEmpty() ? Double.parseDouble(Operand1.getText().toString()) : 0;
+                double operand2 = !Operand2.getText().toString().isEmpty() ? Double.parseDouble(Operand2.getText().toString()) : 0;
 
                 double result = operand1 - operand2;
                 String strResult = Double.toString(result);
@@ -82,8 +82,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Operation.setText("x");
 
-                double operand1 = Double.parseDouble(Operand1.getText().toString());
-                double operand2 = Double.parseDouble(Operand2.getText().toString());
+                double operand1 = !Operand1.getText().toString().isEmpty() ? Double.parseDouble(Operand1.getText().toString()) : 0;
+                double operand2 = !Operand2.getText().toString().isEmpty() ? Double.parseDouble(Operand2.getText().toString()) : 0;
 
                 double result = operand1 * operand2;
                 String strResult = Double.toString(Math.round(result * 10000.0) / 10000.0);
@@ -97,8 +97,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Operation.setText("/");
 
-                double operand1 = Double.parseDouble(Operand1.getText().toString());
-                double operand2 = Double.parseDouble(Operand2.getText().toString());
+                double operand1 = !Operand1.getText().toString().isEmpty() ? Double.parseDouble(Operand1.getText().toString()) : 0;
+                double operand2 = !Operand2.getText().toString().isEmpty() ? Double.parseDouble(Operand2.getText().toString()) : 0;
 
                 if (operand2 != 0) {
                     double result = operand1 / operand2;
